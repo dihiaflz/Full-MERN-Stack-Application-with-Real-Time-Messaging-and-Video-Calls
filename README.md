@@ -10,10 +10,11 @@ A comprehensive MERN stack application featuring a real-time messaging system wi
 6. Run the code using the command **npm start** in both folders and everything will work properly .
    **PS :** In this project, you'll find three distinct authentication middleware files, each serving a specific purpose:
 
-a/ authMiddleware.js: This is the general authentication middleware used for standard API requests. It ensures that only authenticated users can access the API endpoints.
+            a/ authMiddleware.js: This is the general authentication middleware used for standard API requests. It ensures that only authenticated users can access the API endpoints.
 
-b/ authMiddlewareSocket.js: This middleware is specifically designed for socket connections. It handles authentication for WebSocket requests to ensure secure communication between the client and server.
+            b/ authMiddlewareSocket.js: This middleware is specifically designed for socket connections. It handles authentication for WebSocket requests to ensure secure communication between the client and server.
 
-c/ authMiddlewareProv.js: This middleware is used for handling temporary tokens during password change requests. It manages authentication and validation for the process of updating user passwords.
+            c/ authMiddlewareProv.js: This middleware is used for handling temporary tokens during password change requests. It manages authentication and validation for the process of updating user passwords.
   **Additional Note:** The front-end is responsive and designed to work on devices with a width of 300 pixels and above.
+  
 GOOD LUCK !
