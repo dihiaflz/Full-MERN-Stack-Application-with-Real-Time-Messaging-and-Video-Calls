@@ -1,0 +1,176 @@
+.signInDiv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 95vh;
+    width: 95vw;
+    justify-content: center;
+}
+
+.signInDiv .content  {
+    display: flex;
+    align-items: center;
+    gap: 25vh;
+}
+.signInDiv .deco {
+    height: 60vh;
+    width: 20vw;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.signInDiv .titlesPart {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+.signInDiv .title {
+    font-family: 'Lato';
+    color: #3D3556;
+}
+
+.signInDiv .formPart {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+    padding-right: 10vw;
+}
+
+.signInDiv .logo  {
+    height: 15vh;
+    width: 15vw;
+}
+
+.signInDiv .item {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.signInDiv .label {
+    font-family: 'Lato';
+    color: #3D3556;
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+
+.signInDiv .input {
+    margin-bottom: 1vw;
+    height: 7vh;
+    width: 28vw;
+    border-radius: 7px;
+    border: 1px solid #3D3556;
+    padding-left: 2vh;
+}
+.signInDiv .input:focus {
+    border: 2px solid #3D3556;
+}
+
+.signInDiv a {
+    color: #3D3556;
+    font-weight: bold;
+    font-family: 'Lato';
+    text-decoration: none;
+}
+
+.signInDiv .lienInsc {
+    padding-left: 0.5vw;
+}
+
+.signInDiv .buton {
+    height: 7vh;
+    width: 29vw;
+    border-radius: 50px;
+    color: white;
+    background-color: #4830E8;
+    border: 1px solid #4830E8;
+    margin-top: 3vh;
+}
+
+.signInDiv .afterLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+}
+
+.signInDiv .butonPlus {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vh;
+}
+
+.signInDiv .errorMessage {
+    font-family: 'Lato';
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff5252;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    z-index: 999; /* Ensure it's above other elements */
+  }
+  
+  .signInDiv .showErrorMessage {
+opacity: 1; /* Show the message */
+}
+  
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .signInDiv .deco {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .signInDiv {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .signInDiv .deco {
+        display: none;
+    }
+
+    .signInDiv .titlesPart {
+        display: none;
+    }
+
+    .signInDiv .logo  {
+        height: 25vh;
+        width: 25vw;
+    }
+
+    .signInDiv .buton {
+        height: 8vh;
+        width: 42vw;
+    }
+
+    .signInDiv .input {
+        height: 8vh;
+        width: 40vw;
+    }
+
+    .signInDiv .label {
+        font-size: 4vw;
+    }
+
+    .signInDiv .title {
+        font-size: 4vw;
+    }
+
+    .signInDiv .errorMessage {
+        font-size: 3vw;
+    }
+
+    .signInDiv .formPart {
+        padding-right: 0vw;
+    }
+
+}

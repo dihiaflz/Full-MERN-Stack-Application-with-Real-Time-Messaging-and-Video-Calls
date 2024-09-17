@@ -1,0 +1,182 @@
+.inscriptionDiv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 95vh;
+    width: 95vw;
+    justify-content: center;
+}
+
+.inscriptionDiv .content  {
+    display: flex;
+    align-items: center;
+    gap: 25vh;
+}
+.inscriptionDiv .deco {
+    height: 60vh;
+    width: 20vw;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.inscriptionDiv .titlesPart {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+.inscriptionDiv .title {
+    font-family: 'Lato';
+    color: #3D3556;
+}
+
+.inscriptionDiv .formPart {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+    padding-right: 10vw;
+}
+
+.inscriptionDiv .logo  {
+    height: 15vh;
+    width: 15vw;
+}
+
+.inscriptionDiv .item {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.inscriptionDiv .label {
+    font-family: 'Lato';
+    color: #3D3556;
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+
+.inscriptionDiv .input {
+    margin-bottom: 1vw;
+    height: 7vh;
+    width: 28vw;
+    border-radius: 7px;
+    border: 1px solid #3D3556;
+    padding-left: 2vh;
+}
+.inscriptionDiv .input:focus {
+    border: 2px solid #3D3556;
+}
+
+.inscriptionDiv a {
+    color: #3D3556;
+    font-weight: bold;
+    font-family: 'Lato';
+    text-decoration: none;
+}
+
+.inscriptionDiv .lienInsc {
+    padding-left: 0.5vw;
+}
+
+.inscriptionDiv .buton {
+    height: 7vh;
+    width: 29vw;
+    border-radius: 50px;
+    color: white;
+    background-color: #4830E8;
+    border: 1px solid #4830E8;
+    margin-top: 3vh;
+    text-align: right;
+
+}
+
+.inscriptionDiv .afterLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+}
+
+.inscriptionDiv .butonPlus {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vh;
+}
+
+.inscriptionDiv .errorMessage {
+    font-family: 'Lato';
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff5252;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    z-index: 999; /* Ensure it's above other elements */
+  }
+  
+  .inscriptionDiv .showErrorMessage {
+opacity: 1; /* Show the message */
+}
+
+.inscriptionDiv .buttonContainer {
+    text-align: right;
+}
+  
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .inscriptionDiv .deco {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .inscriptionDiv {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .inscriptionDiv .deco {
+        display: none;
+    }
+
+    .inscriptionDiv .titlesPart {
+        display: none;
+    }
+
+    .inscriptionDiv .logo  {
+        height: 25vh;
+        width: 25vw;
+    }
+
+    .inscriptionDiv .buton {
+        height: 8vh;
+        width: 42vw;
+    }
+
+    .inscriptionDiv .input {
+        height: 8vh;
+        width: 40vw;
+    }
+
+    .inscriptionDiv .label {
+        font-size: 4vw;
+    }
+
+    .inscriptionDiv .title {
+        font-size: 4vw;
+    }
+
+    .inscriptionDiv .errorMessage {
+        font-size: 3vw;
+    }
+
+    .inscriptionDiv .formPart {
+        padding-right: 0vw;
+    }
+
+}

@@ -1,0 +1,23 @@
+.error500 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error500 .illu {
+    height: 70vh;
+    width: 70vw;
+    margin-top: 6vh;
+}
+
+.error500 .logo {
+    padding-top: 5vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .error500 .illu {
+        height: 100vh;
+        width: 90vw;
+        margin: -15vh;
+    }
+}

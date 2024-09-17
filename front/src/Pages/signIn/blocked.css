@@ -1,0 +1,37 @@
+.Blocked {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.text {
+    font-family: 'Lato';
+    color: #3D3556;
+}
+
+.logo {
+    padding-top: 5vh;
+}
+
+.deco {
+    height: 60vh;
+    width: 20vw;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15vh;
+}
+
+h1 {
+    text-align: center;
+    width: 50vw;
+}

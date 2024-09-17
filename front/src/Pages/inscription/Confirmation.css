@@ -1,0 +1,188 @@
+.confirmationDiv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 95vh;
+    width: 90vw;
+    justify-content: center;
+}
+
+.confirmationDiv .content  {
+    display: flex;
+    align-items: center;
+    gap: 25vh;
+}
+.confirmationDiv .deco {
+    height: 60vh;
+    width: 20vw;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.confirmationDiv .titlesPart {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    padding-left: 7vw;
+}
+
+.confirmationDiv .title {
+    font-family: 'Lato';
+    color: #3D3556;
+}
+
+.confirmationDiv .formPart {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+    padding-right: 10vw;
+}
+
+.confirmationDiv .logo  {
+    height: 15vh;
+    width: 15vw;
+}
+
+.confirmationDiv .item {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.confirmationDiv .label {
+    font-family: 'Lato';
+    color: #3D3556;
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+
+.confirmationDiv .input {
+    margin-bottom: 1vw;
+    height: 7vh;
+    width: 28vw;
+    border-radius: 7px;
+    border: 1px solid #3D3556;
+    padding-left: 2vh;
+}
+.confirmationDiv .input:focus {
+    border: 2px solid #3D3556;
+}
+
+.confirmationDiv a {
+    color: #3D3556;
+    font-weight: bold;
+    font-family: 'Lato';
+    text-decoration: none;
+}
+
+.confirmationDiv .lienInsc {
+    padding-left: 0.5vw;
+}
+
+.confirmationDiv .button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+
+.confirmationDiv .errorMessage {
+    font-family: 'Lato';
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff5252;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    z-index: 999; /* Ensure it's above other elements */
+}
+  
+.confirmationDiv .showErrorMessage {
+opacity: 1; /* Show the message */
+}
+
+.confirmationDiv .buttonContainer {
+    text-align: right;
+    padding-top: 15vh;
+}
+
+.confirmationDiv .renvoyer {
+    height: 7vh;
+    width: 10vw;
+    border-radius: 50px;
+    color: #4830E8;
+    background-color: white;
+    border: 1px solid #4830E8;
+}
+.confirmationDiv .renvoyer:hover {
+    color: white;
+    background-color: #4830E8;
+    border: 1px solid #4830E8;
+}
+
+
+.confirmationDiv .renvoyerContainer {
+    text-align: right;
+}
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+    .confirmationDiv .deco {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .confirmationDiv {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .confirmationDiv .deco {
+        display: none;
+    }
+
+    .confirmationDiv .titlesPart {
+        display: none;
+    }
+
+    .confirmationDiv .logo  {
+        height: 25vh;
+        width: 25vw;
+    }
+
+    .confirmationDiv .renvoyer {
+        height: 8vh;
+        width: 42vw;
+    }
+
+    .confirmationDiv .formPart {
+        padding-right: 0vw;
+    }
+
+    .confirmationDiv .input {
+        height: 8vh;
+        width: 40vw;
+    }
+
+    .confirmationDiv .label {
+        font-size: 4vw;
+    }
+
+    .confirmationDiv .title {
+        font-size: 4vw;
+    }
+
+    .confirmationDiv .errorMessage {
+        font-size: 3vw;
+    }
+
+    .confirmationDiv .buttonContainer {
+        padding-top: 5vh;
+    }
+
+}

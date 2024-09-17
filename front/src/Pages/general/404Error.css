@@ -1,0 +1,23 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.illu {
+    height: 85vh;
+    width: 80vw;
+    margin: -5vh;
+}
+
+.logo {
+    padding-top: 5vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .illu {
+        height: 100vh;
+        width: 100vw;
+        margin: -25vh;
+    }
+}

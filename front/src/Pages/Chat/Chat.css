@@ -1,0 +1,300 @@
+.chatDiv {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.left {
+  height: 100vh;
+  width: 25vw;
+  border-right: 1px;
+  border-right: 1px solid #3D3556;
+}
+
+.titre1{
+  color: #3D3556;
+  padding: 15%;
+  border-bottom: 1px solid #3D3556;
+  text-align: center;
+}
+
+.friends {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(94.5vh - 100px);        
+  overflow-y: auto;
+}
+
+.friends::-webkit-scrollbar {
+  width: 0;              
+}
+
+.buttonUser-notSelected {
+  all: unset;
+  display: inline-block;
+  padding-top: 12%;
+  padding-bottom: 12%;
+  cursor: pointer;
+  text-align: center;
+  color: #3D3556;
+
+}
+
+.buttonUser-notSelected:hover {
+  background-color: #4830E8;
+  color: #fff;
+}
+
+.buttonUser-selected {
+  all: unset;
+  display: inline-block;
+  padding-top: 12%;
+  padding-bottom: 12%;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #4830E8;
+
+}
+
+.contenuCommentaire {
+  font-size: 15px;
+  padding-left: 2px;
+}
+
+.text1 {
+  color: #3D3556;
+  padding: 10%;
+  text-align: center;
+  align-self: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width : 75vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20.6%;
+  gap: 20%;
+  align-items: center;
+  gap: 50vw;
+  border-bottom: 1px solid #3D3556;
+  margin-bottom: 2vh;
+}
+
+.call {
+  width: 25%;
+  height: 30%;
+}
+
+.titre2 {
+  padding-left: 5vw;
+  color: #3D3556;
+}
+
+.messageInput {
+  position: fixed;
+  bottom: 0;
+  left: 32vw;
+  padding-bottom: 2vh;
+  display: flex;
+  flex-direction: row
+}
+
+.placeholder {
+  width: 50vw;
+  height: 8vh;
+  border-radius: 15px;
+  border-color: #3D3556;
+  padding-left: 2vw;
+}
+
+.envoyer {
+  all: unset;
+}
+
+.send {
+  height: 4vh;
+  width: 8vw;
+}
+
+.chatHistory {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0vw 1vw;
+  height: 65vh;
+  overflow-y: auto;
+}
+
+.chatHistory::-webkit-scrollbar {
+  width: 0;            
+}
+
+
+.chat-bubble-received {
+  border: 1px solid #E6E9EC;
+  border-radius: 10px;
+  background-color: #E6E9EC;
+  color: #3D3556;
+  text-align: left;
+  display: inline-block;
+  max-width: 25vw;
+  width: auto;
+  padding: 1vw;
+  margin: 2px; 
+  word-wrap: break-word;
+}
+
+.chat-bubble-sent {
+  border: 1px solid #4830E8;
+  border-radius: 10px;
+  background-color: #4830E8;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  max-width: 25vw;
+  width: auto;
+  padding: 1vw;
+  margin: 2px; 
+  word-wrap: break-word;
+  align-self: flex-end;
+}
+.chat-bubble-sent.face-call {
+  border: 1px solid #4830E8;
+  border-radius: 10px;
+  background-color: #4830E8;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  max-width: 25vw;
+  width: auto;
+  padding: 1vw;
+  margin: 2px; 
+  word-wrap: break-word;
+  align-self: flex-end;
+}
+.chat-bubble-received.face-call {
+  border: 1px solid #E6E9EC;
+  border-radius: 10px;
+  background-color: #E6E9EC;
+  color: #3D3556;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  max-width: 25vw;
+  width: auto;
+  padding: 1vw;
+  margin: 2px; 
+  word-wrap: break-word;
+}
+
+.back-button {
+  display: none;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.notificationBadge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0 6px;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.timestamp-sent {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 2px;
+  align-self: flex-end;
+  margin-right: 6px;
+  font-size: 10px; 
+}
+
+.timestamp-received {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 2px;
+  align-self: flex-start;
+  margin-left: 6px; 
+  font-size: 10px;
+  font-size: 10px; 
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .call {
+    width: 3vw;
+    height: 20vh;
+    margin-right: 5vw;
+  }
+
+  .header {
+    gap: 48vw;
+  }
+
+}
+
+@media screen and (max-width: 699px) {
+  .titre2{
+    font-size: 1rem;
+
+  }
+
+  .titre1{
+    font-size: 1rem;
+  }
+
+  
+  .header {
+    gap: 45vw
+  }
+
+  
+  .contenuCommentaire {
+    padding-left: 5px;
+    font-size: 12px;
+  }
+
+  .call {
+    width: 3.5vw;
+    margin-right: 3vw;
+  }
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .titre1 {
+    font-size: 10px;
+  }
+
+  .contenuCommentaire {
+    font-size: 10px;
+  }
+
+  .call {
+    width: 5vw;
+    margin-right: 3vw;
+  }
+
+  .header {
+    gap: 38vw
+  }
+}
+
+
+
