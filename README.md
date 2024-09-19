@@ -8,7 +8,8 @@ A comprehensive MERN stack application featuring a real-time messaging system wi
 4. Create a new database in mongodb and find the link to connect your db ( sign in in mongodb website => database => connect => mongodb for vs code )
 5. Fill out the **.env** file with the following informations : DATABASE_URI= the link to use your db, SECRET= the secret for your jwt token, SECRET_PROVISOIR= another secret for the jwt token given for changing password . The secrets can be any word you want but you should keep it a secret
 6. Run the code using the command **npm start** in both folders and everything will work properly .
-   **PS :** In this project, you'll find three distinct authentication middleware files, each serving a specific purpose:
+
+**PS :** In this project, you'll find three distinct authentication middleware files, each serving a specific purpose:
 
             a/ authMiddleware.js: This is the general authentication middleware used for standard API requests. It ensures that only authenticated users can access the API endpoints.
 
